@@ -14,8 +14,6 @@ namespace B_Ui
 
         private bool _setup = false;
 
-        private Image _menuImage;
-
         private string _menuText = "Button Menu";
         private int _menuHeight = 50;
         private float _menuFontSize = 12f;
@@ -32,8 +30,8 @@ namespace B_Ui
             _buttonMenu.Dock = DockStyle.Top;
             _buttonMenu.FlatStyle = FlatStyle.Flat;
             _buttonMenu.FlatAppearance.BorderSize = 0;
-            _buttonMenu.TextImageRelation = TextImageRelation.TextBeforeImage;
-            _buttonMenu.TextAlign = ContentAlignment.MiddleRight;
+            _buttonMenu.TextImageRelation = TextImageRelation.Overlay;
+            _buttonMenu.TextAlign = ContentAlignment.MiddleCenter;
             _buttonMenu.Click += ButtonMenu_Click;
 
             this.Controls.Add(_buttonMenu);
@@ -54,6 +52,8 @@ namespace B_Ui
 
         protected override void OnPaint(PaintEventArgs e)
         {
+            base.OnPaint(e);
+
             if (!_setup)
             {
                 List<Control> subMenu = new List<Control>();
@@ -71,54 +71,43 @@ namespace B_Ui
                     }
                 }
 
-                //subMenu.Reverse();
                 subMenu.AddRange(menu);
                 Controls.Clear();
-
 
                 foreach (var item in subMenu)
                 {
                     Controls.Add(item);
                 }
 
-                //_buttonMenu.Image = _menuImageDown;
-
                 _setup = true;
-            }
+            }            
 
-            _buttonMenu.Image = _menuImage != null ? _menuImage : _menuImageDown;
-
-            _buttonMenu.BackColor = _menuBgColor;
-            _buttonMenu.ForeColor = _menuForeColor;
-            _buttonMenu.Text = _menuText;
-            _buttonMenu.Height = _menuHeight;
-            _buttonMenu.Font = new Font(this.Font.Name, _menuFontSize, FontStyle.Bold);
-
-            base.OnPaint(e);
         }
 
         private void _timer_Tick(object sender, EventArgs e)
         {
             if (_isCollapsed)
             {
-                _buttonMenu.Image = _menuImageUp;
-                _menuImage = _menuImageUp;
-
                 this.Height += 10;
                 if (this.Size == this.MaximumSize)
                 {
+                    if (_menuImageUp != null && _menuImageDown != null)
+                    {
+                        _buttonMenu.Image = _menuImageUp;
+                    }
                     _timer.Stop();
                     _isCollapsed = false;
                 }
             }
             else
             {
-                _buttonMenu.Image = _menuImageDown;
-                _menuImage = _menuImageDown;
-
                 this.Height -= 10;
                 if (this.Size == this.MinimumSize)
                 {
+                    if (_menuImageDown != null)
+                    {
+                        _buttonMenu.Image = _menuImageDown;
+                    }
                     _timer.Stop();
                     _isCollapsed = true;
                 }
@@ -130,8 +119,6 @@ namespace B_Ui
             _timer.Start();
         }
 
-        
-
         [Category("B Code")]
         public string MenuText
         {
@@ -139,6 +126,7 @@ namespace B_Ui
             set
             {
                 _menuText = value;
+                _buttonMenu.Text = _menuText;
                 Invalidate();
             }
         }
@@ -150,6 +138,7 @@ namespace B_Ui
             set
             {
                 _menuHeight = value;
+                _buttonMenu.Height = _menuHeight;
                 Invalidate();
             }
         }
@@ -161,6 +150,7 @@ namespace B_Ui
             set
             {
                 _menuFontSize = value;
+                _buttonMenu.Font = new Font(this.Font.Name, _menuFontSize, FontStyle.Bold);
                 Invalidate();
             }
         }
@@ -172,6 +162,7 @@ namespace B_Ui
             set
             {
                 _menuBgColor = value;
+                _buttonMenu.BackColor = _menuBgColor;
                 Invalidate();
             }
         }
@@ -183,6 +174,7 @@ namespace B_Ui
             set
             {
                 _menuForeColor = value;
+                _buttonMenu.ForeColor = _menuForeColor;
                 Invalidate();
             }
         }
@@ -194,6 +186,17 @@ namespace B_Ui
             set
             {
                 _menuImageDown = value;
+                if (_menuImageDown != null)
+                {
+                    _buttonMenu.Image = _menuImageDown;
+                    _buttonMenu.TextImageRelation = TextImageRelation.TextBeforeImage;
+                    _buttonMenu.TextAlign = ContentAlignment.MiddleRight;
+                }
+                else
+                {
+                    _buttonMenu.TextImageRelation = TextImageRelation.Overlay;
+                    _buttonMenu.TextAlign = ContentAlignment.MiddleCenter;
+                }
                 Invalidate();
             }
         }
@@ -208,6 +211,5 @@ namespace B_Ui
                 Invalidate();
             }
         }
-
     }
 }

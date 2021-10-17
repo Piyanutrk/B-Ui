@@ -49,7 +49,11 @@
     <Compile Include="BPanelDropdown.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BRoundPanelExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BRoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
