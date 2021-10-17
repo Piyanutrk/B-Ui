@@ -46,6 +46,9 @@
     <Compile Include="BButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BPanelDropdown.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

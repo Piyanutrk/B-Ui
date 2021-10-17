@@ -29,12 +29,45 @@ namespace Test
         /// </summary>
         private void InitializeComponent()
         {
+            this.bPanelDropdown1 = new B_Ui.BPanelDropdown();
+            this.bButton5 = new B_Ui.BButton();
             this.bButton4 = new B_Ui.BButton();
             this.bButton3 = new B_Ui.BButton();
             this.bButton2 = new B_Ui.BButton();
             this.bButton1 = new B_Ui.BButton();
-            this.bButton5 = new B_Ui.BButton();
             this.SuspendLayout();
+            // 
+            // bPanelDropdown1
+            // 
+            this.bPanelDropdown1.Location = new System.Drawing.Point(566, 71);
+            this.bPanelDropdown1.MenuBgColor = System.Drawing.Color.Navy;
+            this.bPanelDropdown1.MenuFontSize = 10F;
+            this.bPanelDropdown1.MenuForeColor = System.Drawing.Color.White;
+            this.bPanelDropdown1.MenuHeight = 50;
+            this.bPanelDropdown1.MenuImageDown = null;
+            this.bPanelDropdown1.MenuImageUp = null;
+            this.bPanelDropdown1.MenuText = "Button Menu Text";
+            this.bPanelDropdown1.Name = "bPanelDropdown1";
+            this.bPanelDropdown1.Size = new System.Drawing.Size(200, 100);
+            this.bPanelDropdown1.TabIndex = 4;
+            // 
+            // bButton5
+            // 
+            this.bButton5.BackColor = System.Drawing.SystemColors.Control;
+            this.bButton5.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.bButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton5.BorderRadius = 0;
+            this.bButton5.BorderSize = 1;
+            this.bButton5.FlatAppearance.BorderSize = 0;
+            this.bButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton5.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton5.Location = new System.Drawing.Point(356, 304);
+            this.bButton5.Name = "bButton5";
+            this.bButton5.Size = new System.Drawing.Size(187, 40);
+            this.bButton5.TabIndex = 3;
+            this.bButton5.Text = "bButton5";
+            this.bButton5.TextColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton5.UseVisualStyleBackColor = false;
             // 
             // bButton4
             // 
@@ -88,6 +121,7 @@ namespace Test
             this.bButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bButton2.ForeColor = System.Drawing.Color.White;
+            this.bButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bButton2.Location = new System.Drawing.Point(356, 54);
             this.bButton2.Name = "bButton2";
             this.bButton2.Size = new System.Drawing.Size(187, 170);
@@ -116,29 +150,12 @@ namespace Test
             this.bButton1.TextColor = System.Drawing.Color.White;
             this.bButton1.UseVisualStyleBackColor = false;
             // 
-            // bButton5
-            // 
-            this.bButton5.BackColor = System.Drawing.SystemColors.Control;
-            this.bButton5.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.bButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bButton5.BorderRadius = 0;
-            this.bButton5.BorderSize = 1;
-            this.bButton5.FlatAppearance.BorderSize = 0;
-            this.bButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bButton5.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.bButton5.Location = new System.Drawing.Point(356, 304);
-            this.bButton5.Name = "bButton5";
-            this.bButton5.Size = new System.Drawing.Size(187, 40);
-            this.bButton5.TabIndex = 3;
-            this.bButton5.Text = "bButton5";
-            this.bButton5.TextColor = System.Drawing.Color.PaleVioletRed;
-            this.bButton5.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bPanelDropdown1);
             this.Controls.Add(this.bButton5);
             this.Controls.Add(this.bButton4);
             this.Controls.Add(this.bButton3);
@@ -157,6 +174,7 @@ namespace Test
         private B_Ui.BButton bButton3;
         private B_Ui.BButton bButton4;
         private B_Ui.BButton bButton5;
+        private B_Ui.BPanelDropdown bPanelDropdown1;
     }
 }
 
