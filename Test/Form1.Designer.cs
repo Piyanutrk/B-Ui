@@ -29,6 +29,12 @@ namespace Test
         /// </summary>
         private void InitializeComponent()
         {
+            this.bPanelDropdown2 = new B_Ui.BPanelDropdown();
+            this.bButton11 = new B_Ui.BButton();
+            this.bButton12 = new B_Ui.BButton();
+            this.bButton13 = new B_Ui.BButton();
+            this.bButton14 = new B_Ui.BButton();
+            this.bButton15 = new B_Ui.BButton();
             this.bRoundPanel2 = new B_Ui.BRoundPanel();
             this.bRoundPanel1 = new B_Ui.BRoundPanel();
             this.bPanelDropdown1 = new B_Ui.BPanelDropdown();
@@ -42,8 +48,131 @@ namespace Test
             this.bButton3 = new B_Ui.BButton();
             this.bButton2 = new B_Ui.BButton();
             this.bButton1 = new B_Ui.BButton();
+            this.bPanelDropdown2.SuspendLayout();
             this.bPanelDropdown1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // bPanelDropdown2
+            // 
+            this.bPanelDropdown2.BackColor = System.Drawing.SystemColors.Control;
+            this.bPanelDropdown2.Controls.Add(this.bButton11);
+            this.bPanelDropdown2.Controls.Add(this.bButton12);
+            this.bPanelDropdown2.Controls.Add(this.bButton13);
+            this.bPanelDropdown2.Controls.Add(this.bButton14);
+            this.bPanelDropdown2.Controls.Add(this.bButton15);
+            this.bPanelDropdown2.Location = new System.Drawing.Point(579, 102);
+            this.bPanelDropdown2.MaximumSize = new System.Drawing.Size(200, 190);
+            this.bPanelDropdown2.MenuBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bPanelDropdown2.MenuFontSize = 10F;
+            this.bPanelDropdown2.MenuForeColor = System.Drawing.Color.White;
+            this.bPanelDropdown2.MenuHeight = 40;
+            this.bPanelDropdown2.MenuImageDown = global::Test.Properties.Resources.caret_down;
+            this.bPanelDropdown2.MenuImageUp = global::Test.Properties.Resources.caret_arrow_up;
+            this.bPanelDropdown2.MenuText = "Button Menu";
+            this.bPanelDropdown2.MinimumSize = new System.Drawing.Size(200, 40);
+            this.bPanelDropdown2.Name = "bPanelDropdown2";
+            this.bPanelDropdown2.Size = new System.Drawing.Size(200, 40);
+            this.bPanelDropdown2.TabIndex = 12;
+            // 
+            // bButton11
+            // 
+            this.bButton11.BackColor = System.Drawing.Color.Brown;
+            this.bButton11.BackgroundColor = System.Drawing.Color.Brown;
+            this.bButton11.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton11.BorderRadius = 10;
+            this.bButton11.BorderSize = 0;
+            this.bButton11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bButton11.FlatAppearance.BorderSize = 0;
+            this.bButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton11.ForeColor = System.Drawing.Color.White;
+            this.bButton11.Location = new System.Drawing.Point(0, 160);
+            this.bButton11.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.bButton11.Name = "bButton11";
+            this.bButton11.Size = new System.Drawing.Size(200, 30);
+            this.bButton11.TabIndex = 11;
+            this.bButton11.Text = "bButton11";
+            this.bButton11.TextColor = System.Drawing.Color.White;
+            this.bButton11.UseVisualStyleBackColor = false;
+            // 
+            // bButton12
+            // 
+            this.bButton12.BackColor = System.Drawing.Color.Brown;
+            this.bButton12.BackgroundColor = System.Drawing.Color.Brown;
+            this.bButton12.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton12.BorderRadius = 10;
+            this.bButton12.BorderSize = 0;
+            this.bButton12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bButton12.FlatAppearance.BorderSize = 0;
+            this.bButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton12.ForeColor = System.Drawing.Color.White;
+            this.bButton12.Location = new System.Drawing.Point(0, 130);
+            this.bButton12.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.bButton12.Name = "bButton12";
+            this.bButton12.Size = new System.Drawing.Size(200, 30);
+            this.bButton12.TabIndex = 10;
+            this.bButton12.Text = "bButton12";
+            this.bButton12.TextColor = System.Drawing.Color.White;
+            this.bButton12.UseVisualStyleBackColor = false;
+            // 
+            // bButton13
+            // 
+            this.bButton13.BackColor = System.Drawing.Color.Brown;
+            this.bButton13.BackgroundColor = System.Drawing.Color.Brown;
+            this.bButton13.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton13.BorderRadius = 10;
+            this.bButton13.BorderSize = 0;
+            this.bButton13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bButton13.FlatAppearance.BorderSize = 0;
+            this.bButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton13.ForeColor = System.Drawing.Color.White;
+            this.bButton13.Location = new System.Drawing.Point(0, 100);
+            this.bButton13.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.bButton13.Name = "bButton13";
+            this.bButton13.Size = new System.Drawing.Size(200, 30);
+            this.bButton13.TabIndex = 9;
+            this.bButton13.Text = "bButton13";
+            this.bButton13.TextColor = System.Drawing.Color.White;
+            this.bButton13.UseVisualStyleBackColor = false;
+            // 
+            // bButton14
+            // 
+            this.bButton14.BackColor = System.Drawing.Color.Brown;
+            this.bButton14.BackgroundColor = System.Drawing.Color.Brown;
+            this.bButton14.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton14.BorderRadius = 10;
+            this.bButton14.BorderSize = 0;
+            this.bButton14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bButton14.FlatAppearance.BorderSize = 0;
+            this.bButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton14.ForeColor = System.Drawing.Color.White;
+            this.bButton14.Location = new System.Drawing.Point(0, 70);
+            this.bButton14.Margin = new System.Windows.Forms.Padding(3, 1, 3, 3);
+            this.bButton14.Name = "bButton14";
+            this.bButton14.Size = new System.Drawing.Size(200, 30);
+            this.bButton14.TabIndex = 8;
+            this.bButton14.Text = "bButton14";
+            this.bButton14.TextColor = System.Drawing.Color.White;
+            this.bButton14.UseVisualStyleBackColor = false;
+            // 
+            // bButton15
+            // 
+            this.bButton15.BackColor = System.Drawing.Color.Brown;
+            this.bButton15.BackgroundColor = System.Drawing.Color.Brown;
+            this.bButton15.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bButton15.BorderRadius = 10;
+            this.bButton15.BorderSize = 0;
+            this.bButton15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bButton15.FlatAppearance.BorderSize = 0;
+            this.bButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bButton15.ForeColor = System.Drawing.Color.White;
+            this.bButton15.Location = new System.Drawing.Point(0, 40);
+            this.bButton15.Margin = new System.Windows.Forms.Padding(0);
+            this.bButton15.Name = "bButton15";
+            this.bButton15.Size = new System.Drawing.Size(200, 30);
+            this.bButton15.TabIndex = 7;
+            this.bButton15.Text = "bButton15";
+            this.bButton15.TextColor = System.Drawing.Color.White;
+            this.bButton15.UseVisualStyleBackColor = false;
             // 
             // bRoundPanel2
             // 
@@ -55,7 +184,7 @@ namespace Test
             this.bRoundPanel2.FillLineColor = System.Drawing.Color.Blue;
             this.bRoundPanel2.FillLineWidth = 2F;
             this.bRoundPanel2.FillRadius = 10;
-            this.bRoundPanel2.Location = new System.Drawing.Point(454, 131);
+            this.bRoundPanel2.Location = new System.Drawing.Point(223, 139);
             this.bRoundPanel2.Name = "bRoundPanel2";
             this.bRoundPanel2.Size = new System.Drawing.Size(315, 104);
             this.bRoundPanel2.TabIndex = 6;
@@ -70,7 +199,7 @@ namespace Test
             this.bRoundPanel1.FillLineColor = System.Drawing.Color.SlateBlue;
             this.bRoundPanel1.FillLineWidth = 2F;
             this.bRoundPanel1.FillRadius = 10;
-            this.bRoundPanel1.Location = new System.Drawing.Point(454, 21);
+            this.bRoundPanel1.Location = new System.Drawing.Point(223, 29);
             this.bRoundPanel1.Name = "bRoundPanel1";
             this.bRoundPanel1.Size = new System.Drawing.Size(315, 104);
             this.bRoundPanel1.TabIndex = 5;
@@ -83,7 +212,7 @@ namespace Test
             this.bPanelDropdown1.Controls.Add(this.bButton8);
             this.bPanelDropdown1.Controls.Add(this.bButton7);
             this.bPanelDropdown1.Controls.Add(this.bButton6);
-            this.bPanelDropdown1.Location = new System.Drawing.Point(223, 25);
+            this.bPanelDropdown1.Location = new System.Drawing.Point(579, 29);
             this.bPanelDropdown1.MaximumSize = new System.Drawing.Size(200, 190);
             this.bPanelDropdown1.MenuBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bPanelDropdown1.MenuFontSize = 10F;
@@ -239,15 +368,15 @@ namespace Test
             // 
             // bButton3
             // 
-            this.bButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.bButton3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.bButton3.BackColor = System.Drawing.Color.Indigo;
+            this.bButton3.BackgroundColor = System.Drawing.Color.Indigo;
             this.bButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bButton3.BorderRadius = 20;
+            this.bButton3.BorderRadius = 0;
             this.bButton3.BorderSize = 0;
             this.bButton3.FlatAppearance.BorderSize = 0;
             this.bButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bButton3.ForeColor = System.Drawing.Color.White;
-            this.bButton3.Location = new System.Drawing.Point(26, 85);
+            this.bButton3.Location = new System.Drawing.Point(26, 79);
             this.bButton3.Name = "bButton3";
             this.bButton3.Size = new System.Drawing.Size(150, 40);
             this.bButton3.TabIndex = 1;
@@ -301,6 +430,7 @@ namespace Test
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bPanelDropdown2);
             this.Controls.Add(this.bRoundPanel2);
             this.Controls.Add(this.bRoundPanel1);
             this.Controls.Add(this.bPanelDropdown1);
@@ -311,6 +441,7 @@ namespace Test
             this.Controls.Add(this.bButton1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.bPanelDropdown2.ResumeLayout(false);
             this.bPanelDropdown1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -331,6 +462,12 @@ namespace Test
         private B_Ui.BButton bButton9;
         private B_Ui.BButton bButton8;
         private B_Ui.BButton bButton7;
+        private B_Ui.BPanelDropdown bPanelDropdown2;
+        private B_Ui.BButton bButton11;
+        private B_Ui.BButton bButton12;
+        private B_Ui.BButton bButton13;
+        private B_Ui.BButton bButton14;
+        private B_Ui.BButton bButton15;
     }
 }
 

@@ -186,9 +186,10 @@ namespace B_Ui
             set
             {
                 _menuImageDown = value;
+                _buttonMenu.Image = _menuImageDown;
+
                 if (_menuImageDown != null)
                 {
-                    _buttonMenu.Image = _menuImageDown;
                     _buttonMenu.TextImageRelation = TextImageRelation.TextBeforeImage;
                     _buttonMenu.TextAlign = ContentAlignment.MiddleRight;
                 }
